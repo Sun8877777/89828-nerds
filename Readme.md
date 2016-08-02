@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Александр Черемисин](https://up.htmlacademy.ru/htmlcss/14/user/89828).
-* Наставник: `Ирина Малиновская`(https://github.com/Luckymalina).
+* Наставник: [Ирина Малиновская](https://github.com/Luckymalina).
 
 ---
 
