@@ -5,19 +5,21 @@
     <title>Каталог</title>
 </head>
 <body>
-       <header class="main-header">
+      <header class="main-header">
           <div class="container">
-              <nav class="main-menu">
-                  <ul>
-                      <li><a href="#">СТУДИЯ</a></li>
-                      <li><a href="#">КЛИЕНТЫ</a></li>
-                      <li><a href="#">МАГАЗИН</a></li>
-                      <li><a href="#">КОНТАКТЫ</a></li>
-                  </ul>
-              </nav>
-          <div class="user-block">
-              <a class="basket" href="#" >Корзина</a>
-          </div>
+              <div class="content-header">          
+                  <nav class="main-menu">
+                      <ul>
+                          <li><a href="#">СТУДИЯ</a></li>
+                          <li><a href="#">КЛИЕНТЫ</a></li>
+                          <li><a href="#">МАГАЗИН</a></li>
+                          <li><a href="#">КОНТАКТЫ</a></li>
+                      </ul>
+                  </nav>
+              <div class="user-block">
+                  <a class="basket" href="#" >Корзина</a>
+              </div>
+              </div>  
           <div class="slider">
               <div class="first-page">
                   <h1>ДОЛГО, ДОРОГО, СКРУПУЛЕЗНО.</h1>
@@ -47,22 +49,68 @@
                       <input type="radio" name="block1-features-form" value="rubber">Резиновая</label>
                       <h2 class="title-form-tilter">ОСОБЕННОСТИ:</h2>
                       <label>
-                      <input type="checkbox" name="">Слайдер</label>
-                  </form>  
-
-
-
-      </main>
-      <div class="container">
-          <div class="adress-picture">
-              <div class="adress-text">
-                  <span class="list-title">NЁRDS DESIGN STUDIO</span>
-                  <p class="adress">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-                  <p class="adress">тел. +7(812)275-75-75</p>
-                  <a class="btn-adress" href="#">НАПИШИТЕ НАМ</a>
+                      <input type="checkbox" name="block2-features-slider">Слайдер</label>
+                      <label>
+                      <input type="checkbox" name="block2-features-edge">Блок преимуществ</label>
+                      <label>
+                      <input type="checkbox" name="block2-features-news">Новости</label>
+                      <label>
+                      <input type="checkbox" name="block2-features-galery">Галерея</label>
+                      <label>
+                      <input type="checkbox" name="block2-features-basket">Корзина</label>
+                      <input type="submit" name="show" value="ПОКАЗАТЬ">
+                  </form>
+              </div>
+              <div class="galery">
+                  <div class="galery-filter">
+                      <span class="galery-filter-title">СОРТИРОВАТЬ:</span>
+                      <ul>
+                          <li><a style="galery-filter-price" href="#">ПО ЦЕНЕ</a></li>
+                          <li><a style="gelery-filter-type" href="#">ПО ТИПУ</a></li>
+                          <li><a style="gelery-filter-function" href="#">ПО ФУНКЦИОНАЛЬНОСТИ</a></li>
+                      </ul>
+                  </div>
+                  <div class="galery-main">
+                      <div class="galery-item">
+                          <img src="http://placehold.it/150x100">  
+                      </div>
+                      <div class="galery-item">
+                          <img src="http://placehold.it/150x100">  
+                      </div>
+                      <div class="galery-item">
+                          <img src="http://placehold.it/150x100">  
+                      </div>
+                      <div class="galery-item">
+                          <img src="http://placehold.it/150x100">  
+                      </div>
+                      <div class="galery-item">
+                          <img src="http://placehold.it/150x100">  
+                      </div>
+                      <div class="galery-item">
+                          <img src="http://placehold.it/150x100">  
+                      </div>
+                  </div>
+                  <div class="galery-list">
+                      <a class="galery-btn" href="#">1</a>
+                      <a class="galery-btn" href="#">2</a>
+                      <a class="galery-btn" href="#">3</a>
+                      <a class="galery-btn-next" href="#">СЛЕДУЩАЯ</a>
+                  </div>                
               </div>
           </div>
-      </div>
+      </main>
+      <div class="map">
+          <div class="container">
+              <div class="adress-picture">
+                  <div class="adress-text">
+                      <span class="list-title">NЁRDS DESIGN STUDIO</span>
+                      <p class="adress">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+                      <p class="adress">тел. +7(812)275-75-75</p>
+                      <a class="btn-adress" href="#">НАПИШИТЕ НАМ</a>
+                  </div>
+              </div>
+          </div>
+      </div>    
       <footer>
           <div class="container">
               <div class="footer-social">
@@ -75,6 +123,6 @@
               </div>
               </div>
           </div>            
-      </footer>
+      </footer>  
 </body>
 </html>
