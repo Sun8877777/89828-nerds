@@ -1,0 +1,21 @@
+body {
+    font-size: 14px;
+    line-height: 20px;
+    color: black;
+    font-weight: normal;
+    font-family: "Roboto", "Tahoma", sans-serif;
+}
+h1 {
+    font-size: 18px;
+    line-height: 20px;
+    color: black;
+    font-weight: bold;
+    font-family: "Roboto", "Tahoma", sans-serif;
+}
+legend {
+    font-size: 16px;
+    line-height: 25px;
+    color: blue;
+    font-weight: normal;
+    font-family: 'Times New Roman', Times, serif
+}
