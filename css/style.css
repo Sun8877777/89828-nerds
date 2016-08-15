@@ -19,3 +19,32 @@ legend {
     font-weight: normal;
     font-family: "Roboto", sans-serif;
 }
+.container {
+        width: 900px;
+        margin: 0 auto;
+}
+.main-header {
+    background-color:#eeeeee;
+}
+.content-header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.logo-header, .main-navigation, .user-block {
+    float:left;
+    margin-right:30px;
+
+}
+.main-navigation ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 10px;
+    border:1px solid red;
+    
+}
+a {
+    text-decoration: none;
+
+
+}
