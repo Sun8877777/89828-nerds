@@ -45,6 +45,10 @@ legend {
 }
 a {
     text-decoration: none;
-
-
+}
+.user-block {
+    float:right;
+}
+.container {
+    width: 880px;
 }
