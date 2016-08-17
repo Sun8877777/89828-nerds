@@ -158,10 +158,13 @@ footer::after {
 /*catalog*/
 h1 {
     font-size: 40px;
-    line-height: auto;
+    line-height: 40px;
 
 }
 legend {
     font-size: 18px;
     line-height: 30px;
+}
+.secondary-header {
+
 }
