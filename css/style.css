@@ -39,7 +39,7 @@ body {
     padding: 10px;
     vertical-align: middle;
 }
-a {
+.main-navigation a {
     text-decoration: none;
 }
 .slider {
