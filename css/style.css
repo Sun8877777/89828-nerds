@@ -2,8 +2,12 @@ body {
     font-size: 15px;
     line-height: 22px;
     color: black;
-    font-weight: normal;
+    font-weight: 500;
     font-family: "Roboto", sans-serif;
+    min-width: 900px;
+}
+h1, h2, p {
+    font-weight: 500; 
 }
 .main-header {
     background-color:#eeeeee;
@@ -18,46 +22,93 @@ body {
     display: table;
     clear: both;
 }
+.content-header {
+
+}
 .logo-header {
     float: left;
     width: 140px;
-    margin-right:180px;
+    padding-top: 27px;
+    margin-right: 180px;
 }
 .main-navigation {
     float: left;
     width: 400px;
-    margin-right: 60px;
 }
-.user-block {
-    float:right;
-    width: 100px;
-    margin-top: 24px;
+.main-navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0;
 }
 .main-navigation li {
     display: inline-block;
-    list-style: none;
-    padding: 10px;
-    vertical-align: middle;
+    text-decoration: none;
+    font-size: 14px;
+    vertical-align: bottom;
+    margin-right: 46px;
+}
+.main-navigation li:last-child {
+    margin-right: 0px;
 }
 .main-navigation a {
+    display: block;
+    padding-top: 62px;
     text-decoration: none;
+    text-transform: uppercase;
+    line-height: 30px;
+}
+.user-block {
+    float: right;
+    max-width: 100px;
+    margin-left: 60px;
+}
+.basket {
+    display: inline-block;
+    vertical-align: bottom;
+    padding-top: 62px;
+    font-size: 14px;
+    line-height: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 .slider {
+    padding-top: 60px;
     background-color:#eeeeee;
 }
 .index-page {
     padding-bottom: 80px;
-   
 }
 .index-page-promo {
     float: left;
     width: 380px;
     margin-right: 160px;
-    
+}
+.index-page-title {
+    margin-top: 22px;
+    margin-bottom: 0px;
+    font-size: 36px;
+    line-height: 36px;
+}
+.index-page-promo p {
+    margin-top: 16px;
+    font-size: 15px;
+}
+.header-btn {
+    display: inline-block;
+    padding: 12px 70px;
+    width: 100px;
+    background-color: #fb565a;
+    box-sizing: content-box;
+    border-radius: 10px;
 }
 .index-page-pic {
     float: right;
-    width: 340px;
+    width: 338px;
+    height: 231px;
+}
+main {
+    padding-top: 80px;
 }
 .block-services {
     margin-top: 80px;
@@ -68,7 +119,7 @@ body {
     width: 240px;
     margin-right: 80px;
 }
-.services-item:nth-child(3) {
+.services-item:nth-child(3n) {
     margin-right: 0px;
 }
 .services-desc {
@@ -127,30 +178,68 @@ body {
     width: 560px;
 }
 /*catalog*/
-.title-header h1 {
-    font-size: 40px;
-    line-height: 60px;
-    text-align: center;
-    margin-left: 266px;
-    margin-right: 280px;
+.secondary-header {
+    margin: 0px;
+    padding-top: 60px;
+    background-color:#eeeeee;
 }
-.main {
-    padding-top: 80px;
+.title-header{
+    padding-top: 20px;
+    padding-left: 106px;
+    padding-right: 120px;
+    padding-bottom: 90px;   
+}
+.title-header h1 {
+    padding: 0px;
+    margin: 0px;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: center;
+    text-transform: uppercase;
+}
+fieldset {
+    border: none;
 }
 legend {
     font-size: 18px;
     line-height: 30px;
+    
 }
 .sidebar {
     float: left;
     width: 240px;
     margin-right: 40px;
 }
-
+.gallery-filter {
+    margin-bottom: 25px;
+}
+.gallery-filter-title {
+     margin-right: 40px;
+}
+.gallery-filter ul {
+    padding: 0px;
+    padding-left: 17px;
+    margin: 0px;
+    font-size: 0px;
+}
 .gallery-filter li {
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: top;
+}
 
+.gallery-filter span {
+    padding-left: 0px;
+    font-size: 12px;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+.gallery-filter a {
+    font-size: 12px;
+    line-height: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 1px dashed black;
+    margin-right: 45px;
 }
 .gallery {
     float: right;
@@ -170,7 +259,66 @@ legend {
 .gallery-item:nth-child(even) {
     margin-right: 0px;
 }
+.gallery-preview {
+    position: relative;
+}
+.gallery-inner:hover {
+    
+}
+.gallery-inner {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    z-index: 200;
+    top: 20px;
+    left: 20px;
+    background-color: white;
+}
+
+.gallery-inner-desk h2 {
+    font-size: 18px;
+    line-height: 8.56px;
+    text-align: center;
+    margin: 21px;
+    margin-top: 36px;
+    margin-bottom: 17px;
+    text-transform: uppercase;
+}
+.gallery-inner-desk:nth-child(4) h2 {
+    line-height: 24px;
+    border: 1px solid red
+}
+.gallery-inner-desk p {
+    margin: 0 20px;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 0px;
+}
+.gallery-inner-btn {
+    margin: 30px;
+    padding: 11px;
+    padding-left: 40px;
+    padding-right: 35px; 
+}
 .gallery-pages li {
     display: inline-block;
     vertical-align: middle;
+}
+.gallery-btn {
+    padding: 14px 16px;
+    font-size: 0px;
+    border: 1px solid gray;
+    margin-right: 11px;
+}
+.gallery-btn-next {
+    padding: 14px 30px;
+    font-size: 0px;
+    border: 1px solid gray;
+}
+.gallery-pages a {
+    font-size: 12px;
+    line-height: 18px;
+    texr-align: center;
+    text-decoration: none;
+
 }
