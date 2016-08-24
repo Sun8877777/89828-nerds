@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css\normalize.css">
-    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Каталог</title>
 </head>
 <body>
@@ -13,11 +13,11 @@
               <div class="content-header clearfix">
                   <div class="logo-header">
                       <a href="index.html" class="logo-link">
-                          <img src="img\logo-nerds.png" width="139" height="56">
+                          <img src="img/logo-nerds.png" width="139" height="56">
                       </a>  
                   </div>                
                   <nav class="main-navigation">
-                      <ul>
+                      <ul class="main-navigation-list">
                           <li><a href="index.html">Студия</a></li>
                           <li><a href="#">Клиенты</a></li>
                           <li><a href="catalog.html">Магазин</a></li>
@@ -38,147 +38,137 @@
           </div>
       </div>           
       <main>
-          <div class="container clearfix">
-              <div class="sidebar">
-                  <form action="#" method="GET">
-                      <fieldset form="#">
-                          <legend>стоимость:</legend>
-                          <label for="price"></label>
-                          <input type="range" name="price" id="price" min="0"" max="1500"" step="1">
-                          <label for="first-input-price">от</label>
-                          <input type="text" name="first-input-price" id="first-input-price">
-                          <label for="second-input-price">до</label>
-                          <input type="text" name="second-input-price" id="second-input-price">
-                      </fieldset>
-                      <fieldset form="#">  
-                          <legend>сетка:</legend>                        
-                          <label>
-                          <input type="radio" name="block1-features-form" value="Adaptive" checked>Адаптивная</label>
-                          <label>
-                          <input type="radio" name="block1-features-form" value="Fixed">Фиксированная</label>
-                          <label>
-                          <input type="radio" name="block1-features-form" value="rubber">Резиновая</label>
-                      </fieldset>
-                      <fieldset form="#">    
-                          <legend>особенности:</legend>
-                          <label>
-                          <input type="checkbox" name="block2-features-slider">Слайдер</label>
-                          <label>
-                          <input type="checkbox" name="block2-features-edge">Блок преимуществ</label>
-                          <label>
-                          <input type="checkbox" name="block2-features-news">Новости</label>
-                          <label>
-                          <input type="checkbox" name="block2-features-galery">Галерея</label>
-                          <label>
-                          <input type="checkbox" name="block2-features-basket">Корзина</label>
-                      </fieldset>
-                      <input type="submit" name="show" value="ПОКАЗАТЬ">
-                  </form>
-              </div>
-              <div class="gallery">
-                  <div class="gallery-filter">
-                      <ul>    
-                          <li><span class="gallery-filter-title">сортировать:</span></li>
-                          <li><a href="#" class="gallery-filter-price">по цене</a></li>
-                          <li><a href="#" class="gallery-filter-type">по типу</a></li>
-                          <li><a href="#" class="gallery-filter-function">по функциональности</a></li>
-                      </ul>
+          <div class="main-catalog">
+              <div class="container clearfix">
+                  <div class="sidebar">
+                      <form action="#" method="GET">
+                          <fieldset form="#">
+                              <legend>Cтоимость:</legend>
+                              <label for="price"></label>
+                              <input type="range" name="price" id="price" min="0"" max="1500"" step="1">
+                              <label for="first-input-price">От</label>
+                              <input type="text" name="first-input-price" id="first-input-price">
+                              <label for="second-input-price">До</label>
+                              <input type="text" name="second-input-price" id="second-input-price">
+                          </fieldset>
+                          <fieldset form="#">  
+                              <legend>Сетка:</legend>                        
+                              <label>
+                              <input type="radio" name="block1-features-form" value="Adaptive" checked>Адаптивная</label>
+                              <label>
+                              <input type="radio" name="block1-features-form" value="Fixed">Фиксированная</label>
+                              <label>
+                              <input type="radio" name="block1-features-form" value="rubber">Резиновая</label>
+                          </fieldset>
+                          <fieldset form="#">    
+                              <legend>Особенности:</legend>
+                              <label>
+                              <input type="checkbox" name="block2-features-slider">Слайдер</label>
+                              <label>
+                              <input type="checkbox" name="block2-features-edge">Блок преимуществ</label>
+                              <label>
+                              <input type="checkbox" name="block2-features-news">Новости</label>
+                              <label>
+                              <input type="checkbox" name="block2-features-galery">Галерея</label>
+                              <label>
+                              <input type="checkbox" name="block2-features-basket">Корзина</label>
+                          </fieldset>
+                          <input type="submit" name="show" value="ПОКАЗАТЬ">
+                      </form>
                   </div>
-                  <div class="gallery-main">
-                      <div class="gallery-item">
-                          <div class="gallery-preview">
-                              <img src="img\catlog-pic-item-1.jpg" width="240" height="240">                            
-                              <div class="gallery-inner">
-                                  <div class="gallery-inner-desk">
+                  <div class="gallery">
+                      <div class="gallery-filter">
+                          <ul class="gallery-filter-list">    
+                              <li><span class="gallery-filter-title">Сортировать:</span></li>
+                              <li><a href="#" class="gallery-filter-price">По цене</a></li>
+                              <li><a href="#" class="gallery-filter-type">По типу</a></li>
+                              <li><a href="#" class="gallery-filter-function">По функциональности</a></li>
+                          </ul>
+                      </div>
+                      <div class="gallery-main">
+                          <div class="gallery-item">
+                              <div class="gallery-preview">
+                                  <img src="img/catlog-pic-item-1.jpg" width="240" height="240">                            
+                                  <div class="gallery-inner">                                  
                                       <h2>Aviator</h2>
                                       <p>Одностраничный макет с авторским дизайном</p>
-                                  </div>
-                                  <button class="gallery-inner-btn">8000 Р.</button>
-                              </div>  
-                          </div>  
-                      </div>
-                      <div class="gallery-item">
-                          <div class="gallery-preview">                              
-                              <img src="img\catlog-pic-item-2.jpg" width="240" height="240">
-                              <div class="gallery-inner">
-                                  <div class="gallery-inner-desk">
-                                      <h2>Sunset</h2>
-                                      <p>Интернет магазин с личным кабинетом</p>
-                                  </div>
-                                  <button class="gallery-inner-btn">10000 Р.</button>
-                              </div>  
-                          </div>  
-                      </div>
-                      <div class="gallery-item">
-                          <div class="gallery-preview">                              
-                              <img src="img\catlog-pic-item-3.jpg" width="240" height="240">
-                              <div class="gallery-inner">
-                                  <div class="gallery-inner-desk">
-                                      <h2>Forte</h2>
-                                      <p>Отличный макет для личного блога</p>
-                                  </div>
-                                  <button class="gallery-inner-btn">5000 Р.</button>
-                              </div>  
-                          </div>  
-                      </div>
-                      <div class="gallery-item">
-                          <div class="gallery-preview">                              
-                              <img src="img\catlog-pic-item-4.jpg" width="240" height="240">
-                              <div class="gallery-inner">
-                                  <div class="gallery-inner-desk">
-                                      <h2>Modern Organic THAI</h2>
-                                      <p>Сайт для ресторана быстрого питания</p>
-                                  </div>
-                                  <button class="gallery-inner-btn">12000 Р.</button>
-                              </div>  
-                          </div>  
-                      </div>
-                      <div class="gallery-item">
-                          <div class="gallery-preview">                              
-                              <img src="img\catlog-pic-item-5.jpg" width="240" height="240">
-                              <div class="gallery-inner">
-                                  <div class="gallery-inner-desk">
-                                      <h2>Avenue</h2>
-                                      <p>Макет для блога о путешествиях</p>
-                                  </div>
-                                  <button class="gallery-inner-btn">8000 Р.</button>
+                                      <button class="gallery-inner-btn">8000 Р.</button>
+                                  </div>  
                               </div>  
                           </div>
-                      </div>    
-                      <div class="gallery-item">
-                          <div class="gallery-preview">                              
-                              <img src="img\catlog-pic-item-6.jpg" width="240" height="240">
-                              <div class="gallery-inner">
-                                  <div class="gallery-inner-desk">
-                                      <h2>Dovetail</h2>
-                                      <p>Интернет-магазин с галереей товаров</p>
-                                  </div>
-                                  <button class="gallery-inner-btn">8000 Р.</button>
+                          <div class="gallery-item">
+                              <div class="gallery-preview">                              
+                                  <img src="img/catlog-pic-item-2.jpg" width="240" height="240">
+                                  <div class="gallery-inner">
+                                      <h2>Sunset</h2>
+                                      <p>Интернет магазин с личным кабинетом</p>
+                                      <button class="gallery-inner-btn">10000 Р.</button>
+                                  </div>  
                               </div>  
-                          </div>  
+                          </div>
+                          <div class="gallery-item">
+                              <div class="gallery-preview">                              
+                                  <img src="img/catlog-pic-item-3.jpg" width="240" height="240">
+                                  <div class="gallery-inner">                            
+                                      <h2>Forte</h2>
+                                      <p>Отличный макет для личного блога</p>                                  
+                                      <button class="gallery-inner-btn">5000 Р.</button>
+                                  </div>  
+                              </div>  
+                          </div>
+                          <div class="gallery-item">
+                              <div class="gallery-preview">                              
+                                  <img src="img/catlog-pic-item-4.jpg" width="240" height="240">
+                                  <div class="gallery-inner">                                  
+                                      <h2>Modern Organic THAI</h2>
+                                      <p>Сайт для ресторана быстрого питания</p>                                  
+                                      <button class="gallery-inner-btn">12000 Р.</button>
+                                  </div>  
+                              </div>  
+                          </div>
+                          <div class="gallery-item">
+                              <div class="gallery-preview">                              
+                                  <img src="img/catlog-pic-item-5.jpg" width="240" height="240">
+                                  <div class="gallery-inner">                                  
+                                      <h2>Avenue</h2>
+                                      <p>Макет для блога о путешествиях</p>                                  
+                                      <button class="gallery-inner-btn">8000 Р.</button>
+                                  </div>  
+                              </div>
+                          </div>    
+                          <div class="gallery-item">
+                              <div class="gallery-preview">                              
+                                  <img src="img/catlog-pic-item-6.jpg" width="240" height="240">
+                                  <div class="gallery-inner">                                  
+                                      <h2>Dovetail</h2>
+                                      <p>Интернет-магазин с галереей товаров</p>                                  
+                                      <button class="gallery-inner-btn">8000 Р.</button>
+                                  </div>  
+                              </div>  
+                          </div>
                       </div>
-                  </div>
-                  <div class="gallery-pages">
-                      <ul>
-                          <li><a href="#" class="gallery-btn">1</a></li>
-                          <li><a href="#" class="gallery-btn">2</a></li>
-                          <li><a href="#" class="gallery-btn">3</a></li>
-                          <li><a href="#" class="gallery-btn-next">следущая</a></li>  
-                      </ul>
-                  </div>
-              </div>  
-          </div>                          
+                      <div class="gallery-pages">
+                          <ul class="gallery-pages-list">
+                              <li><a href="#" class="gallery-btn">1</a></li>
+                              <li><a href="#" class="gallery-btn">2</a></li>
+                              <li><a href="#" class="gallery-btn">3</a></li>
+                              <li><a href="#" class="gallery-btn-next">Следущая</a></li>  
+                          </ul>
+                      </div>
+                  </div>  
+              </div>
+          </div>                            
       </main>
       <div class="map">
           <div class="map-image">
-              <img src="img\map.jpg" width="100%" height="416">
+              <img src="img/map.jpg" width="100%" height="416">
               <div class="container">              
                   <div class="address-block">
                       <div class="address">
-                          <span class="title-address">nёrds design studuo</span>
+                          <span class="title-address">Nёrds design studuo</span>
                           <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                           <p>тел. +7(812)275-75-75</p>
-                          <a href="#" class="btn-address">напишите нам</a>
+                          <a href="#" class="btn-address">Напишите нам</a>
                       </div>
                   </div>
               </div>    

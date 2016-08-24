@@ -1,16 +1,15 @@
 body {
     font-size: 15px;
     line-height: 22px;
-    color: black;
+    color: rgb(0,0,0);
     font-weight: 500;
     font-family: "Roboto", sans-serif;
-    min-width: 900px;
 }
 h1, h2, p {
     font-weight: 500; 
 }
 .main-header {
-    background-color:#eeeeee;
+    background-color:rgb(238, 238, 238);
 }
 .container {
     width: 880px;
@@ -22,38 +21,37 @@ h1, h2, p {
     display: table;
     clear: both;
 }
-.content-header {
-
-}
 .logo-header {
     float: left;
     width: 140px;
     padding-top: 27px;
-    margin-right: 180px;
+    margin-right: 179px;
 }
 .main-navigation {
     float: left;
     width: 400px;
+    padding-top: 54px;
 }
-.main-navigation ul {
+.main-navigation-list {
     margin: 0;
     padding: 0;
+    padding-left: 2px;
     list-style: none;
     font-size: 0;
 }
-.main-navigation li {
+.main-navigation-list li {
     display: inline-block;
     text-decoration: none;
     font-size: 14px;
-    vertical-align: bottom;
-    margin-right: 46px;
+    vertical-align: top;
+    margin-right: 45px;
 }
-.main-navigation li:last-child {
-    margin-right: 0px;
+
+.main-navigation-list li:last-child {
+    margin-right: 0;
 }
-.main-navigation a {
+.main-navigation-list a {
     display: block;
-    padding-top: 62px;
     text-decoration: none;
     text-transform: uppercase;
     line-height: 30px;
@@ -62,57 +60,62 @@ h1, h2, p {
     float: right;
     max-width: 100px;
     margin-left: 60px;
+    padding-top: 54px;
 }
 .basket {
     display: inline-block;
     vertical-align: bottom;
-    padding-top: 62px;
     font-size: 14px;
     line-height: 30px;
     text-decoration: none;
     text-transform: uppercase;
 }
 .slider {
-    padding-top: 60px;
-    background-color:#eeeeee;
+    background-color:rgb(238,238,238);
+    padding-top: 48px;
+    padding-bottom: 69px;
 }
-.index-page {
-    padding-bottom: 80px;
-}
-.index-page-promo {
+.slider-promo {
     float: left;
     width: 380px;
     margin-right: 160px;
 }
-.index-page-title {
-    margin-top: 22px;
-    margin-bottom: 0px;
+.slider-promo-title {
+    margin: 0;
+    margin-top: 20px;
     font-size: 36px;
     line-height: 36px;
 }
-.index-page-promo p {
-    margin-top: 16px;
-    font-size: 15px;
+.slider-promo p {
+    margin-top: 18px;
+    font-size: 16px;
+    line-height: 22px;
 }
 .header-btn {
     display: inline-block;
-    padding: 12px 70px;
+    vertical-align: top;
     width: 100px;
-    background-color: #fb565a;
-    box-sizing: content-box;
-    border-radius: 10px;
+    margin-top: 12px;
+    padding: 10px 70px;
+    background-color:rgb(251, 86, 90);
+    border-radius: 3px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255)
 }
-.index-page-pic {
+.slider-picture {
     float: right;
     width: 338px;
     height: 231px;
 }
-main {
-    padding-top: 80px;
-}
+
 .block-services {
-    margin-top: 80px;
-    padding-bottom: 60px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 2px solid rgb(238, 238, 238) 
 }
 .services-item {
     float: left;
@@ -120,56 +123,141 @@ main {
     margin-right: 80px;
 }
 .services-item:nth-child(3n) {
-    margin-right: 0px;
+    margin-right: 0;
+}
+.picture-services {
+    width: 240px;
+    height: 124px;
 }
 .services-desc {
-    width: 240px;
+    padding-top: 8px;
+}
+.services-desc h2 {
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+.services-desc p {
+    padding: 0;
+}
+.block-btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px 39px;
+    margin-top: 10px;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+}
+.web {
+    background-color: rgb(251, 86, 90);
+}
+.apps {
+    background-color: rgb(0, 202, 116);
+}
+.presentations {
+    background-color: rgb(239, 200, 74);
 }
 .index-content {
-    padding-bottom: 72px;
+    padding-top: 41px;
+    padding-bottom: 34px;
+    border-bottom: 2px solid rgb(238, 238, 238) 
+
 }
 .index-content-left {
     float: left;
     width: 620px;
+}
+.about-heading {
+    margin:0;
+    padding-top: 30px;
+    padding-right: 10px;
+    padding-bottom: 2px;
+    font-size: 36px;
+    line-height: 36px;
+}
+.about-company p {
+    padding-right: 10px;
+    padding-bottom: 27px;
+    font-size: 16px;
+}
+.list-title {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.content-list-preview {
+    padding-top: 7px;
+}
+.content-list-preview li {
+    padding-bottom: 22px;
 }
 .index-content-right {
     float: right;
     width: 240px;
     margin-left: 20px; 
 }
+.content-right-logo {
+    padding-top: 19px;
+    padding-left: 30px;
+}
+.right-logo-sub {
+    display: block;
+    font-size: 16px;
+    line-height: 8.56px;
+    text-transform: uppercase;
+    padding-left: 49px;
+    padding-top: 27px;
+    padding-bottom: 71px;
+}
 .partners {
-    margin: 0 -38px;
-    padding-top: 44px;
-    padding-bottom: 54px;
+    padding-top: 35px;
+    padding-bottom: 23px;
+    font-size: 0px;
+    border-bottom: 2px solid rgb(238, 238, 238);
 }
 .partners-logo {
     display: inline-block;
-    vertical-align: middle;
-    text-align: center;
+    vertical-align: top;
+    padding-top: 20px;
     width: 220px;
-    margin: 0 38px;
+    margin-right: 94px;
+    padding-left: 5px;
 }
-.partners-logo:nth-child(3) {
-    margin-right: 0px;
+.partners-logo:first-child {
+    padding-top: 32px;
+    padding-left: 10px;
+}
+.partners-logo:last-child {
+    padding-top: 10px;
+    padding-left: 8px;
+    margin-right: 0;
 }    
 .map-image {
+    padding-top: 85px;
+    margin: 0 auto;
+    width: 1119px;
+    height: 416px;
     position: relative;
 }
 .address-block {
-    position:absolute;
-    top: 0px;
+    position: absolute;
+    top: 0;
     width: 250px;
     height: 240px;
     margin-top: 80px;
-    margin-left: 0px;
-    background-color: white;
+    margin-left: 0;
+    background-color: rgb(255, 255, 255);
 }
 .footer-main {
-    padding: 0px;
-    padding-top:74px; 
+    padding-top: 75px;
+    padding-bottom: 67px;
 }
 .footer-social {
-    float:left;
+    float: left;
     margin-right: 80px;
     width: 240px; 
 }
@@ -177,58 +265,71 @@ main {
     float: right;
     width: 560px;
 }
+.title-promo {
+    margin: 0;
+    font-size: 36px;
+    line-height: 36px;
+}
+.social-promo p {
+    margin: 0;
+    padding-top: 8px;
+    font-size: 16px;
+    line-height: 22px;
+}
 /*catalog*/
 .secondary-header {
-    margin: 0px;
     padding-top: 60px;
-    background-color:#eeeeee;
+    background-color:rgb(238, 238, 238);
 }
-.title-header{
-    padding-top: 20px;
-    padding-left: 106px;
+.title-header {
+    padding-left: 109px;
     padding-right: 120px;
-    padding-bottom: 90px;   
+    padding-bottom: 79px; 
 }
 .title-header h1 {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     font-size: 40px;
     line-height: 50px;
     text-align: center;
     text-transform: uppercase;
 }
-fieldset {
-    border: none;
-}
-legend {
-    font-size: 18px;
-    line-height: 30px;
-    
+.main-catalog {
+    padding-top: 74px;
 }
 .sidebar {
     float: left;
     width: 240px;
     margin-right: 40px;
 }
+fieldset {
+    border: none;
+    padding: 0;
+}
+legend {
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
 .gallery-filter {
-    margin-bottom: 25px;
+    padding-top: 5px;
+    padding-bottom: 16px;
 }
 .gallery-filter-title {
      margin-right: 40px;
 }
 .gallery-filter ul {
-    padding: 0px;
-    padding-left: 17px;
-    margin: 0px;
-    font-size: 0px;
+    padding: 0;
+    padding-left: 18px;
+    margin: 0;
+    font-size: 0;
 }
 .gallery-filter li {
     display: inline-block;
     vertical-align: top;
 }
-
 .gallery-filter span {
-    padding-left: 0px;
+    padding-left: 0;
     font-size: 12px;
     line-height: 18px;
     text-transform: uppercase;
@@ -238,7 +339,7 @@ legend {
     line-height: 18px;
     text-decoration: none;
     text-transform: uppercase;
-    border-bottom: 1px dashed black;
+    border-bottom: 1px dashed rgb(0, 0, 0);
     margin-right: 45px;
 }
 .gallery {
@@ -249,18 +350,27 @@ legend {
     margin-left: 20px;
 }
 .gallery-item {
+    position: relative;
     display: inline-block;
     width: 240px;
     height: 270px;
-    margin-right: 60px;
-    margin-bottom: 80px;
+    /* margin-top: -10px; */
+    margin-right: 75px;
+    margin-bottom: 79px;
     vertical-align: top;
 }
 .gallery-item:nth-child(even) {
-    margin-right: 0px;
+    margin-right: 0;
 }
 .gallery-preview {
-    position: relative;
+    border: 30px solid rgb(241, 241, 241);
+    border-radius: 5px; 
+}
+.gallery-preview img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
 }
 .gallery-inner:hover {
     
@@ -270,29 +380,29 @@ legend {
     width: 200px;
     height: 200px;
     z-index: 200;
-    top: 20px;
+    bottom: 20px;
     left: 20px;
-    background-color: white;
+    right: 20px;
+    background-color: rgb(255, 255, 255);
 }
 
-.gallery-inner-desk h2 {
+.gallery-inner h2 {
     font-size: 18px;
     line-height: 8.56px;
     text-align: center;
     margin: 21px;
-    margin-top: 36px;
-    margin-bottom: 17px;
+    margin-top: 39px;
+    margin-bottom: 20px;
     text-transform: uppercase;
 }
-.gallery-inner-desk:nth-child(4) h2 {
+.gallery-inner:nth-child(4) h2 {
     line-height: 24px;
-    border: 1px solid red
 }
-.gallery-inner-desk p {
-    margin: 0 20px;
+.gallery-inner p {
+    margin: 0px 20px;
     font-size: 14px;
     line-height: 18px;
-    padding: 0px;
+    text-align: center;
 }
 .gallery-inner-btn {
     margin: 30px;
@@ -300,25 +410,33 @@ legend {
     padding-left: 40px;
     padding-right: 35px; 
 }
+.gallery-pages {
+    padding-top: 12px;
+    padding-left: 20px;
+}
+.gallery-pages-list {
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+}
 .gallery-pages li {
     display: inline-block;
-    vertical-align: middle;
-}
-.gallery-btn {
-    padding: 14px 16px;
-    font-size: 0px;
-    border: 1px solid gray;
+    vertical-align: top;
+    text-transform: uppercase;
     margin-right: 11px;
 }
+.gallery-btn {
+    padding: 10px 14px;
+    border: 1px solid rgb(241, 241, 241);
+}
 .gallery-btn-next {
-    padding: 14px 30px;
-    font-size: 0px;
-    border: 1px solid gray;
+    padding: 10px 35px;
+    border: 1px solid rgb(241, 241, 241);
 }
 .gallery-pages a {
     font-size: 12px;
     line-height: 18px;
-    texr-align: center;
+    text-align: center;
     text-decoration: none;
 
 }
