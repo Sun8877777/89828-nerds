@@ -42,7 +42,6 @@ h1, h2, p {
 .main-navigation-list li {
     display: inline-block;
     text-decoration: none;
-    font-size: 14px;
     vertical-align: top;
     margin-right: 45px;
 }
@@ -50,11 +49,31 @@ h1, h2, p {
 .main-navigation-list li:last-child {
     margin-right: 0;
 }
+
 .main-navigation-list a {
     display: block;
     text-decoration: none;
     text-transform: uppercase;
     line-height: 30px;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+}
+.main-navigation-list .active {
+    position: relative;
+    background: none;
+}
+.main-navigation-list .active::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(251, 86, 90)
+}
+.main-navigation-list a:hover, .user-block a:hover {
+    color: rgb(251, 86, 90)
+}
+.main-navigation-list a:active, .user-block a:active {
+    color: rgb(166, 166, 166)
 }
 .user-block {
     float: right;
@@ -63,12 +82,24 @@ h1, h2, p {
     padding-top: 54px;
 }
 .basket {
+    position: relative;
     display: inline-block;
-    vertical-align: bottom;
+    vertical-align: top;
     font-size: 14px;
     line-height: 30px;
     text-decoration: none;
     text-transform: uppercase;
+    color: rgb(0, 0, 0)
+}
+.basket::before {
+    content: "";
+    position: absolute;
+    top:4px;
+    left: -30px;
+    width: 18px;
+    height: 18px;
+    background-image: url(img/spr.png);
+    background-position: 0px 0px;
 }
 .slider {
     background-color:rgb(238,238,238);
@@ -156,11 +187,29 @@ h1, h2, p {
 .web {
     background-color: rgb(251, 86, 90);
 }
+.web:hover{
+    background-color: rgb(214, 73, 77);
+}
+.web:active{
+    background-color: rgb(182, 53, 56);
+}
 .apps {
     background-color: rgb(0, 202, 116);
 }
+.apps:hover {
+    background-color: rgb(1, 162, 94);
+}
+.apps:active {
+    background-color: rgb(0, 144, 83);
+}
 .presentations {
     background-color: rgb(239, 200, 74);
+}
+.presentations:hover {
+    background-color: rgb(214, 174, 44);
+}
+.presentations:active {
+    background-color: rgb(192, 155, 36);
 }
 .index-content {
     padding-top: 41px;
@@ -235,6 +284,12 @@ h1, h2, p {
     padding-top: 10px;
     padding-left: 8px;
     margin-right: 0;
+}
+.partners-logo-link img {
+    opacity: 0.2;
+}
+.partners-logo-link img:hover, .partners-logo-link img:active {
+    opacity: 1;
 }    
 .map-image {
     padding-top: 85px;
@@ -278,7 +333,7 @@ h1, h2, p {
 }
 /*catalog*/
 .secondary-header {
-    padding-top: 60px;
+    padding-top: 57px;
     background-color:rgb(238, 238, 238);
 }
 .title-header {
@@ -295,7 +350,7 @@ h1, h2, p {
     text-transform: uppercase;
 }
 .main-catalog {
-    padding-top: 74px;
+    padding-top: 77px;
 }
 .sidebar {
     float: left;
@@ -305,6 +360,7 @@ h1, h2, p {
 fieldset {
     border: none;
     padding: 0;
+    margin-left: -1px;
 }
 legend {
     font-size: 18px;
@@ -354,7 +410,7 @@ legend {
     display: inline-block;
     width: 240px;
     height: 270px;
-    /* margin-top: -10px; */
+    z-index: 1;
     margin-right: 75px;
     margin-bottom: 79px;
     vertical-align: top;
@@ -370,21 +426,24 @@ legend {
     position: absolute;
     left: 0;
     bottom: 0;
+    z-index: 2;
 
-}
-.gallery-inner:hover {
-    
 }
 .gallery-inner {
     position: absolute;
     width: 200px;
     height: 200px;
-    z-index: 200;
+    z-index: 10;
     bottom: 20px;
     left: 20px;
     right: 20px;
     background-color: rgb(255, 255, 255);
 }
+.gallery-inner:hover {
+    display: none;
+    cursor: pointer;
+}
+
 
 .gallery-inner h2 {
     font-size: 18px;
@@ -400,15 +459,16 @@ legend {
 }
 .gallery-inner p {
     margin: 0px 20px;
+    padding-bottom: 26px;
     font-size: 14px;
     line-height: 18px;
     text-align: center;
 }
 .gallery-inner-btn {
-    margin: 30px;
-    padding: 11px;
-    padding-left: 40px;
-    padding-right: 35px; 
+    margin-left: 30px;
+    padding: 13px 33px;
+    font-size: 18px;
+    line-height: 8.56px; 
 }
 .gallery-pages {
     padding-top: 12px;
