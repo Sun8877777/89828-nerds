@@ -25,7 +25,7 @@ h1, h2, p {
     float: left;
     width: 140px;
     padding-top: 27px;
-    margin-right: 179px;
+    margin-right: 180px;
 }
 .main-navigation {
     float: left;
@@ -69,10 +69,10 @@ h1, h2, p {
     height: 2px;
     background-color: rgb(251, 86, 90)
 }
-.main-navigation-list a:hover, .user-block a:hover {
+.main-navigation-list a:hover, .basket:hover {
     color: rgb(251, 86, 90)
 }
-.main-navigation-list a:active, .user-block a:active {
+.main-navigation-list a:active, .basket:active {
     color: rgb(166, 166, 166)
 }
 .user-block {
@@ -98,15 +98,107 @@ h1, h2, p {
     left: -30px;
     width: 18px;
     height: 18px;
-    background-image: url(img/spr.png);
-    background-position: 0px 0px;
+    background-image: url(../img/spr.png);
+    background-position: -10px -9px;
 }
 .slider {
+    position: relative;
     background-color:rgb(238,238,238);
-    padding-top: 48px;
-    padding-bottom: 69px;
+    padding-top: 37px;
+    overflow: hidden;
+    min-height: 310px;
+    margin: 0 auto;
 }
-.slider-promo {
+.slider input[type="radio"] {
+    display: none;
+}
+.slider-controls {
+    position: absolute;
+    bottom: 82px;
+    left: 50%;
+    z-index: 10;
+    width: 200px;
+    margin-left: -110px;
+    text-align: center;
+}
+.slider-controls label {
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    margin: 0 3px;
+    vertical-align: top;
+    background: #ffffff;
+    border: 3px solid #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.slide {
+    min-height: 310px;
+    background-repeat: no-repeat;
+    background-position: 100% 10px;
+}
+.slide-text {
+    width: 500px;
+    padding: 30px 0;
+}
+.slide-title {
+    font-size: 36px;
+    line-height: 36px;
+    padding-bottom: 3px;
+}
+.slide-text p {
+    font-size: 16px;
+    line-height: 22px;
+    color: #283136;
+}
+
+.slide-btn {
+    display: block;
+    width: 220px;
+    margin-top: 27px;
+    padding: 8px 10px;
+    font-weight: 300;
+    font-size: 12px;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #fb565a;
+    border-radius: 3px;
+}
+.slide:nth-child(1) {
+    background-image: url("../img/header-image-1.png");
+}
+
+.slide:nth-child(2) {
+    background-image: url("../img/header-image-2.png");
+    background-position: 98% 15px;
+}
+
+.slide:nth-child(3) {
+    background-image: url("../img/header-image-3.png");
+    background-position: 99% -9px;
+}
+.slide {
+    display: none;
+}
+#btn-1:checked ~ .slides .slide:nth-child(1) {
+    display: block;
+}
+
+#btn-2:checked ~ .slides .slide:nth-child(2) {
+    display: block;
+}
+
+#btn-3:checked ~ .slides .slide:nth-child(3) {
+    display: block;
+}
+#btn-1:checked ~ .slider-controls label[for="btn-1"],
+#btn-2:checked ~ .slider-controls label[for="btn-2"],
+#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+    background: #c1c1c1;
+}
+/*.slider-promo {
     float: left;
     width: 380px;
     margin-right: 160px;
@@ -141,7 +233,7 @@ h1, h2, p {
     float: right;
     width: 338px;
     height: 231px;
-}
+}*/
 
 .block-services {
     padding-top: 80px;
@@ -292,20 +384,57 @@ h1, h2, p {
     opacity: 1;
 }    
 .map-image {
-    padding-top: 85px;
-    margin: 0 auto;
+    margin: 85px auto 0 auto;
     width: 1119px;
     height: 416px;
     position: relative;
 }
 .address-block {
     position: absolute;
-    top: 0;
+    top: 86px;
     width: 250px;
     height: 240px;
-    margin-top: 80px;
-    margin-left: 0;
+    left: 117px;
+    /* margin-top: 86px; */
+    /* margin-left: 0; */
     background-color: rgb(255, 255, 255);
+}
+.address-block span {
+    display: block;
+    font-size: 16px;
+    line-height: 30px;
+    margin-top: 26px;
+    padding: 0 22px;
+    text-transform: uppercase;
+}
+.address-block p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 12px;
+    padding: 0 23px;
+    color: #a3a3a3;
+}
+.address-block .phone {
+    margin-top: 19px;
+    margin-bottom: 30px;
+}
+.address-block .btn-address {
+    display: inline-block;
+    vertical-align: top;
+    width: 202px;
+    height: 38px;
+    font-size: 12px;
+    line-height: 18px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px 0px 0px 0px;
+    background-color: #fb565a;
+    color: #ffffff;
+    border-radius: 3px;
+    margin-left: 26px;
+    box-sizing: border-box;
 }
 .footer-main {
     padding-top: 75px;
@@ -315,6 +444,41 @@ h1, h2, p {
     float: left;
     margin-right: 80px;
     width: 240px; 
+}
+.social-btn {
+    display: inline-block;
+    vertical-align: top;
+    background-color: #e1e1e1;
+    width: 30px;
+    min-height: 30px;
+    border-radius: 30px;
+    border: 15px solid #e1e1e1;
+    margin-right: 26px;
+    margin-top: 2px;
+    /* margin-left: 3px; */
+    font-size: 0px;
+    background-image: url("../img/spr.png");
+    background-repeat: no-repeat;
+}
+.social-btn-vk {
+    background-position: -116px -1px;
+}
+.social-btn-fb {
+    background-position: -35px -7px;
+}
+.social-btn-inst {
+    background-position: -71px -6px;
+}
+.social-btn:hover {
+    background-color: #fb565a;
+    border-color: #fb565a;
+}
+.social-btn:active {
+    background-color: #d6494d;
+    border-color: #d6494d;
+}
+.social-btn:last-child {
+    margin-right: 0;
 }
 .social-promo {
     float: right;
@@ -361,12 +525,107 @@ fieldset {
     border: none;
     padding: 0;
     margin-left: -1px;
+    margin-bottom: 31px;
+}
+fieldset:nth-child(2) {
+    margin-bottom: 40px;
 }
 legend {
     font-size: 18px;
     line-height: 30px;
     text-transform: uppercase;
 }
+fieldset input[type="radio"], fieldset input[type="checkbox"] {
+    display: none;
+}
+/*Фильтр цены*/
+.range-filter {
+    width: 240px;
+    margin: 14px auto;
+}
+.range-controls {
+    position: relative;
+    height: 41px;
+    padding-top: 39px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background: #f1f1f1;
+}
+.range-controls .scale {
+    height: 2px;
+    background: #d7dcde;
+}
+.range-controls .bar {
+    width: 70%;
+    height: 2px;
+    background: #00ca74;
+}
+.range-controls .toggle {
+    position: absolute;
+    top: 30px;
+    left: 0px;
+    width: 4px;
+    height: 4px;
+    cursor: pointer;
+    border: 8px solid #fff;
+    border-radius: 50%;
+    background: #ababab;
+    box-shadow: 0 2px 1px 0 #cfcfcf;
+}
+.range-controls .toggle-min {
+     left: 20px;
+}
+.range-controls .toggle-max {
+     left: 160px;
+}
+.price-controls {
+     font-size: 0;
+}
+.price-controls label {
+    font-size: 16px;
+    display: inline-block;
+    width: 50%;
+    text-transform: uppercase;
+}
+.max-price {
+    text-align: right;
+}
+.price-controls input {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    font-size: 16px;
+    width: 60px;
+    margin-left: 6px;
+    padding: 8px 10px;
+    text-align: center;
+    color: #283136;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background: #f1f1f1;
+}
+/*Форма после фильтра*/
+fieldset:nth-child(2) label {
+    display: block;
+    padding: 14px 0px 4px 36px;
+}
+fieldset:nth-child(3) label {
+    display: block;
+    padding: 14px 0px 4px 36px;
+}
+.sidebar input[name="show"] {
+    display: block;
+    padding: 5px 5px 5px 7px;
+    margin-top: 58px;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 18px;
+    text-align: center;
+    width: 155px;
+    background-color: #f1f1f1;
+}
+/*Каталог товаров и цен*/
 .gallery-filter {
     padding-top: 5px;
     padding-bottom: 16px;
@@ -410,7 +669,7 @@ legend {
     display: inline-block;
     width: 240px;
     height: 270px;
-    z-index: 1;
+    z-index: 10;
     margin-right: 75px;
     margin-bottom: 79px;
     vertical-align: top;
@@ -422,28 +681,34 @@ legend {
     border: 30px solid rgb(241, 241, 241);
     border-radius: 5px; 
 }
+.gallery-preview::before {
+
+}
 .gallery-preview img {
     position: absolute;
     left: 0;
     bottom: 0;
-    z-index: 2;
+    z-index: 8;
 
 }
 .gallery-inner {
     position: absolute;
     width: 200px;
     height: 200px;
-    z-index: 10;
+    z-index: 1;
     bottom: 20px;
     left: 20px;
     right: 20px;
     background-color: rgb(255, 255, 255);
-}
-.gallery-inner:hover {
-    display: none;
     cursor: pointer;
 }
-
+.gallery-inner {
+    display: none;
+    
+}
+.gallery-item:hover .gallery-inner{
+    display: block;
+}
 
 .gallery-inner h2 {
     font-size: 18px;

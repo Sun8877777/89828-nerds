@@ -43,14 +43,21 @@
                   <div class="sidebar">
                       <form action="#" method="GET">
                           <fieldset form="#">
-                              <legend>Cтоимость:</legend>
-                              <label for="price"></label>
-                              <input type="range" name="price" id="price" min="0"" max="1500"" step="1">
-                              <label for="first-input-price">От</label>
-                              <input type="text" name="first-input-price" id="first-input-price">
-                              <label for="second-input-price">До</label>
-                              <input type="text" name="second-input-price" id="second-input-price">
-                          </fieldset>
+                              <legend>Стоимость:</legend>
+                              <div class="range-filter">
+                                  <div class="range-controls">
+                                    <div class="scale">
+                                      <div class="bar"></div>
+                                    </div>
+                                    <div class="toggle toggle-min"></div>
+                                    <div class="toggle toggle-max"></div>
+                                  </div>
+                                  <div class="price-controls">
+                                    <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                                    <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+                                  </div>
+                              </div>
+                          </fieldset>    
                           <fieldset form="#">  
                               <legend>Сетка:</legend>                        
                               <label>
@@ -167,7 +174,7 @@
                       <div class="address">
                           <span class="title-address">Nёrds design studuo</span>
                           <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-                          <p>тел. +7(812)275-75-75</p>
+                          <p class="phone">тел. +7(812)275-75-75</p>
                           <a href="#" class="btn-address">Напишите нам</a>
                       </div>
                   </div>
