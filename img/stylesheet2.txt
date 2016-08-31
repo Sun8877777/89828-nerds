@@ -1,0 +1,53 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite--icon-down-active {
+    width: 11px;
+    height: 10px;
+    background-position: -20px -20px;
+}
+
+.sprite--icon-down-defau {
+    width: 11px;
+    height: 10px;
+    background-position: -71px -20px;
+}
+
+.sprite--icon-down-hover {
+    width: 11px;
+    height: 10px;
+    background-position: -122px -20px;
+}
+
+.sprite--icon-down-press {
+    width: 11px;
+    height: 10px;
+    background-position: -173px -20px;
+}
+
+.sprite--icon-up-active {
+    width: 11px;
+    height: 10px;
+    background-position: -224px -20px;
+}
+
+.sprite--icon-up-defau {
+    width: 11px;
+    height: 10px;
+    background-position: -275px -20px;
+}
+
+.sprite--icon-up-hover {
+    width: 11px;
+    height: 10px;
+    background-position: -326px -20px;
+}
+
+.sprite--icon-up-press {
+    width: 11px;
+    height: 10px;
+    background-position: -377px -20px;
+}

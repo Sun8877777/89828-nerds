@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Нёрдс</title>
@@ -161,14 +161,14 @@
       </main>
       <div class="map">
           <div class="map-image">
-              <img src="img/map.jpg" width="1119" height="416">
+              <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=jzTRgGdZh9hWWEIXh0lUT2FQAwi8-uV8&amp;width=1200&amp;height=416&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
               <div class="container">              
                   <div class="address-block">
                       <div class="address">
-                          <span class="title-address">Nёrds design studuo</span>
+                          <span class="title-address">Nёrds design studio</span>
                           <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-                          <p class="phone">тел. +7(812)275-75-75</p>
-                          <a href="#" class="btn-address">Напишите нам</a>
+                          <p class="phone">тел. +7 (812) 275-75-75</p>
+                          <a href="#" class="btn-form-user">Напишите нам</a>
                       </div>
                   </div>
               </div>    
@@ -186,6 +186,73 @@
                   <p>Скидка 10% для друзей из социальных сетей.</p>
               </div>
           </div>            
-      </footer>  
+      </footer>
+      <div class="modal-content">
+          <button type="button" class="modal-content-close" title="закрыть"></button>
+          <form action= "#2" method="POST" class="modal-form">
+              <fieldset form="#2">
+                  <legend>Напишите нам</legend>
+                  <label for="modal-user-name">Ваше имя:
+                      <input type="text" name="modal-user-name" id="modal-user-name" placeholder="представьтесь, пожалуйста">
+                  </label>
+                  <label for="modal-email">Ваш e-mail:
+                      <input type="text" name="modal-email" id="modal-email" placeholder="для отправки ответа">
+                  </label>
+                  <label for="modal-uset-text">Текст письма:
+                       <textarea name="modal-uset-text" id="modal-uset-text" rows="10" cols="5">в свободной форме
+                       </textarea>
+                  </label>
+                  <button type="submit" name="modal-submit">отправить</button>
+              </fieldset>    
+          </form>
+      </div>
+      <script>
+          var link = document.querySelector(".btn-form-user");
+          var popup = document.querySelector(".modal-content");
+          var close = popup.querySelector(".modal-content-close");
+          var form = popup.querySelector("form");
+          var login = popup.querySelector("[name=modal-user-name]");
+          var email = popup.querySelector("[name=modal-email]")
+          var storage = localStorage.getItem("login");
+
+          link.addEventListener("click", function(event) {
+              event.preventDefault();
+              popup.classList.add("modal-content-show");
+
+              if (storage) {
+                  login.value = storage;
+                  email.focus();
+              } else {
+              login.focus();
+              }
+          });
+          
+          close.addEventListener("click", function(event) {
+              event.preventDefault();
+              popup.classList.remove("modal-content-show");
+              popup.classList.remove("modal-error");
+          });
+
+          form.addEventListener("submit", function(event) {
+              if (!login.value || !email.value)
+                  {
+                  event.preventDefault();
+                  popup.classList.add("modal-error");
+                  popup.offsetWidth = popup.offsetWidth;
+                  } else {
+                      localStorage.setItem("login", login.value);
+                  }
+          });
+
+          window.addEventListener("keydown", function(event) {
+              if (event.keyCode === 27) {
+                  if (popup.classList.contains("modal-content-show")) {
+                      popup.classList.remove("modal-content-show");
+                      popup.classList.remove("modal-error");
+                  }
+              }
+          })
+      </script>
+      
   </body>
 </html> 
