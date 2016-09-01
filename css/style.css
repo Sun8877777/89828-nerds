@@ -30,6 +30,7 @@ h1, h2, p {
 .main-navigation {
     float: left;
     width: 400px;
+    min-height: 35px;
     padding-top: 53px;
 }
 .main-navigation-list {
@@ -79,6 +80,7 @@ h1, h2, p {
 .user-block {
     float: right;
     max-width: 100px;
+    min-height: 35px;
     margin-left: 56px;
     padding-top: 53px;
     margin-right: 2px;
@@ -146,6 +148,9 @@ h1, h2, p {
     background-repeat: no-repeat;
     background-position: 100% 10px;
 }
+.slide:nth-child(3) p {
+    letter-spacing: 0.1px;
+}
 .slide-text {
     width: 500px;
     padding: 31px 0;
@@ -168,7 +173,7 @@ h1, h2, p {
     width: 240px;
     height: 38px;
     box-sizing: border-box;
-    margin-top: 28px;
+    margin-top: 27px;
     margin-left: 1px;
     padding: 8px 0px;
     font-weight: 300;
@@ -266,34 +271,37 @@ h1, h2, p {
     color: #ffffff;
 }
 .web {
-    background-color: rgb(251, 86, 90);
+    background-color: #fb565a;
 }
 .web:hover{
-    background-color: rgb(214, 73, 77);
+    background-color: #d6494d;
 }
 .web:active{
-    background-color: rgb(182, 53, 56);
+    background-color: #b63538;
+    box-shadow: inset 0px 17px 0 -14px #9b2d30;
 }
 .apps {
-    background-color: rgb(0, 202, 116);
+    background-color: #00ca74;
 }
 .apps:hover {
-    background-color: rgb(1, 162, 94);
+    background-color: #01a25e;
 }
 .apps:active {
-    background-color: rgb(0, 144, 83);
+    background-color: #009053;
+    box-shadow: inset 0px 17px 0 -14px #007b47;
 }
 .presentations {
-    background-color: rgb(239, 200, 74);
+    background-color: #efc84a;
 }
 .presentations:hover {
-    background-color: rgb(214, 174, 44);
+    background-color: #d6ae2c;
 }
 .presentations:active {
-    background-color: rgb(192, 155, 36);
+    background-color: #c09b24;
+    box-shadow: inset 0px 17px 0 -14px #a3841f;
 }
 .index-content {
-    padding-top: 43px;
+    padding-top: 41px;
     padding-bottom: 71px;
     border-bottom: 2px solid #eeeeee;
 
@@ -304,10 +312,8 @@ h1, h2, p {
     margin-left: -2px;
 }
 .about-heading {
-    margin:0;
+    margin: 0;
     padding-top: 29px;
-    padding-right: 10px;
-    padding-bottom: 1px;
     font-size: 36px;
     line-height: 36px;
 }
@@ -317,11 +323,13 @@ h1, h2, p {
     word-spacing: 2px;
 }
 .about-company p {
-    padding-right: 10px;
-    padding-bottom: 28px;
+    padding-top: 2px;
     font-size: 16px;
-    word-spacing: 0.2px;
+    word-spacing: 0.4px;
     letter-spacing: 0.1px;
+}
+.index-content-left .content-list {
+    padding-top: 28px;
 }
 .list-title {
     font-size: 16px;
@@ -372,7 +380,7 @@ h1, h2, p {
     text-transform: uppercase;
     padding-left: 49px;
     padding-top: 27px;
-    padding-bottom: 71px;
+    padding-bottom: 72px;
 }
 .right-logo-sub::before {
     content: "";
@@ -395,7 +403,7 @@ h1, h2, p {
     background-color: #eeeeee;
 }
 .partners {
-    padding-top: 36px;
+    padding-top: 35px;
     padding-bottom: 20px;
     font-size: 0px;
     border-bottom: 2px solid #eeeeee;
@@ -403,6 +411,7 @@ h1, h2, p {
 .partners-logo {
     display: inline-block;
     vertical-align: top;
+    line-height: 40px;
     padding-top: 19px;
     width: 220px;
     margin-right: 94px;
@@ -425,10 +434,13 @@ h1, h2, p {
 }    
 .map-image {
     position: relative;
-    margin: 86px auto 0 auto;
+    margin: 84px auto 0 auto;
+    padding-left: 1px;
     width: 1200px;
     height: 416px;
     z-index: 1;
+    background-image: url("../img/map.jpg");
+    background-repeat: no-repeat;
 }
 .map-image::before {
     content: "";
@@ -439,14 +451,14 @@ h1, h2, p {
     min-height: 190px;
     background-image: url("../img/logo-nerds-map.png");
     background-repeat: no-repeat;
-    z-index: 2;
+    z-index: -1;
 }
 .address-block {
     position: absolute;
-    top: 86px;
+    top: 88px;
     width: 250px;
     height: 240px;
-    left: 159px;
+    left: 160px;
     background-color: #ffffff;
     z-index: 2;
 }
@@ -455,8 +467,8 @@ h1, h2, p {
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.1px;
-    margin-top: 26px;
-    padding: 0 21px;
+    margin-top: 24px;
+    padding: 0 20px;
     text-transform: uppercase;
 }
 .address-block p {
@@ -495,7 +507,7 @@ h1, h2, p {
 }
 .footer-social {
     float: left;
-    width: 240px; 
+    width: 242px; 
 }
 .social-btn {
     display: inline-block;
