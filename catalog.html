@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Каталог</title>
@@ -60,33 +60,25 @@
                           </fieldset>    
                           <fieldset form="#">  
                               <legend>Сетка:</legend>                        
-                              <label class="filter-radio">
-                              <input type="radio" name="block1-features-form" value="Adaptive" checked>
-                              <span class="radio-indicator"></span>Адаптивная</label>
-                              <label class="filter-radio">
-                              <input type="radio" name="block1-features-form" value="Fixed">
-                              <span class="radio-indicator"></span>Фиксированная</label>
-                              <label class="filter-radio">
-                              <input type="radio" name="block1-features-form" value="rubber">
-                              <span class="radio-indicator"></span>Резиновая</label>
+                              <input type="radio" name="block1-features-form" id="block1-Adaptive" value="Adaptive" checked>
+                              <label for="block1-Adaptive" class="filter-radio">Адаптивная</label>
+                              <input type="radio" name="block1-features-form" id="block1-Fixed" value="Fixed" checked disabled>
+                              <label for="block1-Fixed" class="filter-radio">Фиксированная</label>                             
+                              <input type="radio" name="block1-features-form" id="block1-Rubber" value="Rubber">
+                              <label for="block1-Rubber" class="filter-radio">Резиновая</label>
                           </fieldset>
                           <fieldset form="#">    
                               <legend>Особенности:</legend>
-                              <label class="filter-checkbox">
-                              <input type="checkbox" name="block2-features-slider" checked>
-                              <span class="checkbox-indicator"></span>Слайдер</label>
-                              <label class="filter-checkbox">
-                              <input type="checkbox" name="block2-features-edge">
-                              <span class="checkbox-indicator"></span>Блок преимуществ</label>
-                              <label class="filter-checkbox">
-                              <input type="checkbox" name="block2-features-news" checked>
-                              <span class="checkbox-indicator"></span>Новости</label>
-                              <label class="filter-checkbox">
-                              <input type="checkbox" name="block2-features-galery" disabled>
-                              <span class="checkbox-indicator"></span>Галерея</label>
-                              <label class="filter-checkbox">
-                              <input type="checkbox" name="block2-features-basket">
-                              <span class="checkbox-indicator"></span>Корзина</label>
+                              <input type="checkbox" name="block2-features-slider" id="block2-features-slider" checked>
+                              <label for="block2-features-slider" class="filter-checkbox">Слайдер</label>
+                              <input type="checkbox" name="block2-features-edge" id="block2-features-edge">
+                              <label for="block2-features-edge" class="filter-checkbox">Блок преимуществ</label>                   
+                              <input type="checkbox" name="block2-features-news" id="block2-features-news" checked disabled>
+                              <label for="block2-features-news" class="filter-checkbox">Новости</label>                              
+                              <input type="checkbox" name="block2-features-galery" id="block2-features-galery" disabled>
+                              <label for="block2-features-galery" class="filter-checkbox">Галерея</label>
+                              <input type="checkbox" name="block2-features-basket" id="block2-features-basket">
+                              <label for="block2-features-basket" class="filter-checkbox">Корзина</label>
                           </fieldset>
                           <input type="submit" name="show" value="ПОКАЗАТЬ">
                       </form>
@@ -100,7 +92,7 @@
                               <li><a href="#" class="gallery-filter-function">По функционалу</a></li>
                           </ul>
                           <span class="gallery-filter-down filter-down-active"></span>
-                          <span class="gallery-filter-up filter-up-active"></span>
+                          <span class="gallery-filter-up"></span>
                       </div>
                       <div class="gallery-main">
                           <div class="gallery-item">
@@ -176,20 +168,39 @@
               </div>
           </div>                            
       </main>
-       <div class="map">
+        <div class="map">
           <div class="map-image">
-              <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=yLiZvg-x7QC0t5H9RSnO_0y6SL_QNkpm&amp;width=1200&amp;height=416&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
-              <div class="container">              
-                  <div class="address-block">
-                      <div class="address">
-                          <span class="title-address">Nёrds design studio</span>
-                          <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-                          <p class="phone">тел. +7 (812) 275-75-75</p>
-                          <a href="#" class="btn-form-user">Напишите нам</a>
-                      </div>
+              <!--<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=yLiZvg-x7QC0t5H9RSnO_0y6SL_QNkpm&amp;width=100%&amp;height=416&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>-->
+          </div>  
+          <div class="container"> 
+              <div class="address-block">
+                  <div class="address">
+                      <span class="title-address">Nёrds design studio</span>
+                      <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+                      <p class="phone">тел. +7 (812) 275-75-75</p>
+                      <a href="#" class="btn-form-user">Напишите нам</a>
                   </div>
-              </div>    
-          </div>
+              </div>
+          </div>    
+          <div class="modal-content">
+                  <button type="button" class="modal-content-close" title="закрыть"></button>
+                  <form action= "#2" method="POST" class="modal-form">
+                      <fieldset form="#2">
+                          <legend>Напишите нам</legend>
+                          <label for="modal-user-name">Ваше имя:
+                              <input type="text" name="modal-user-name" id="modal-user-name"                  placeholder="представьтесь, пожалуйста">
+                          </label>
+                          <label for="modal-email">Ваш e-mail:
+                              <input type="text" name="modal-email" id="modal-email        eholder="дл  отправки                ответа">
+                          </label>
+                          <label for="modal-uset-text">Текст письма:
+                               <textarea name="modal-uset-text" id="modal-uset-text" rows="10      ="5">в свободной форме
+                               </textarea>
+                          </label>
+                          <button type="submit" name="modal-submit">отправить</button>
+                      </fieldset>    
+                  </form>
+              </div>          
       </div>    
       <footer class="footer-main">
           <div class="container clearfix">    
