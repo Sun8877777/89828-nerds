@@ -3,7 +3,7 @@ body {
     line-height: 22px;
     color: #000000;
     font-weight: 500;
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", "Verdana" sans-serif;
 }
 h1, h2, p {
     font-weight: 500; 
@@ -98,8 +98,8 @@ h1, h2, p {
 .basket::before {
     content: "";
     position: absolute;
-    top: 6px;
-    left: -28px;
+    top: 4px;
+    left: -27px;
     width: 18px;
     height: 18px;
     background-image: url(../img/spr.png);
@@ -109,7 +109,7 @@ h1, h2, p {
     background-position: -45px -9px;
 }
 .basket:active::before {
-    background-position: -78px -9px;
+    background-position: -80px -9px;
 }
 .slider {
     position: relative;
@@ -403,19 +403,24 @@ h1, h2, p {
 }
 .partners {
     padding-top: 36px;
-    line-height: 64px;
-    font-size: 0px;
+    padding-bottom: 10px;
     border-bottom: 2px solid #eeeeee;
+}
+.partners-list {
+    margin: 0 -38px;
+    /* font-size: 0px; */
+
 }
 .partners-logo {
     display: inline-block;
-    vertical-align: top;
-    padding-top: 19px;
-    width: 220px;
-    margin-right: 94px;
-    padding-left: 5px;
+    vertical-align: middle;
+    width: 240px;
+    text-align: center;
+    margin: 0 38px;
+    height: 140px;
+    line-height: 140px;
 }
-.partners-logo:first-child {
+/*.partners-logo:first-child {
     padding-top: 30px;
     padding-left: 11px;
 }
@@ -423,7 +428,7 @@ h1, h2, p {
     padding-top: 9px;
     padding-left: 8px;
     margin-right: 0;
-}
+}*/
 .partners-logo-link img {
     opacity: 0.2;
 }
@@ -750,6 +755,13 @@ label input[type="checkbox"]:disabled {
     border: none;
     border-radius: 3px;
 }
+.sidebar input[name="show"]:hover {
+    background-color: #e5e5e5;
+}
+.sidebar input[name="show"]:active {
+    background-color: #d5d5d5;
+    box-shadow: inset 0px 17px 0 -14px #b5b5b5;
+}
 /*Каталог товаров и цен*/
 .gallery-filter {
     position: relative;
@@ -935,6 +947,7 @@ label input[type="checkbox"]:disabled {
     font-size: 14px;
     line-height: 18px;
     text-align: center;
+    overflow: hidden
 }
 .gallery-inner-btn {
     display: inline-block;
@@ -999,6 +1012,7 @@ label input[type="checkbox"]:disabled {
 .gallery-btn:active, .gallery-btn-next:active {
     background-color: #d5d5d5;
     color: #2b2b2b;
+    box-shadow: inset 0px 17px 0 -14px #b5b5b5;
 }
 
 .gallery-pages-list .active-page, 
