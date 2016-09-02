@@ -29,7 +29,7 @@ h1, h2, p {
 }
 .main-navigation {
     float: left;
-    width: 400px;
+    width: 420px;
     min-height: 38px;
     padding-top: 55px;
 }
@@ -417,7 +417,6 @@ h1, h2, p {
     width: 240px;
     text-align: center;
     margin: 0 38px;
-    height: 140px;
     line-height: 140px;
 }
 /*.partners-logo:first-child {
