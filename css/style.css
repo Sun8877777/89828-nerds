@@ -9,7 +9,7 @@ h1, h2, p {
     font-weight: 500; 
 }
 .main-header {
-    background-color:rgb(238, 238, 238);
+    background-color: #eeeeee;
 }
 .container {
     width: 880px;
@@ -29,7 +29,7 @@ h1, h2, p {
 }
 .main-navigation {
     float: left;
-    width: 420px;
+    width: 450px;
     min-height: 38px;
     padding-top: 55px;
 }
@@ -46,12 +46,10 @@ h1, h2, p {
     vertical-align: top;
     margin-right: 45px;
 }
-
 .main-navigation-list li:last-child {
     margin-right: 0;
     margin-left: 1px;
 }
-
 .main-navigation-list a {
     display: block;
     text-decoration: none;
@@ -69,19 +67,19 @@ h1, h2, p {
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: rgb(251, 86, 90)
+    background-color: #fb565a;
 }
 .main-navigation-list a:hover, .basket:hover {
-    color: rgb(251, 86, 90)
+    color: #fb565a;
 }
 .main-navigation-list a:active, .basket:active {
-    color: rgb(166, 166, 166)
+    color: #8f8f8f;
 }
 .user-block {
     float: right;
     max-width: 100px;
     min-height: 38px;
-    margin-left: 56px;
+    margin-left: 34px;
     padding-top: 55px;
     margin-right: 2px;
 }
@@ -102,7 +100,7 @@ h1, h2, p {
     left: -27px;
     width: 18px;
     height: 18px;
-    background-image: url(../img/spr.png);
+    background-image: url("../img/spr.png");
     background-position: -10px -9px;
 }
 .basket:hover::before {
@@ -167,7 +165,6 @@ h1, h2, p {
     color: #283136;
     padding-left: 1px;
 }
-
 .slide-btn {
     display: block;
     width: 240px;
@@ -189,12 +186,10 @@ h1, h2, p {
     background-image: url("../img/header-image-1.png");
     background-position: 541px 10px;
 }
-
 .slide:nth-child(2) {
     background-image: url("../img/header-image-2.png");
     background-position: 98% 15px;
 }
-
 .slide:nth-child(3) {
     background-image: url("../img/header-image-3.png");
     background-position: 99% -9px;
@@ -205,11 +200,9 @@ h1, h2, p {
 #btn-1:checked ~ .slides .slide:nth-child(1) {
     display: block;
 }
-
 #btn-2:checked ~ .slides .slide:nth-child(2) {
     display: block;
 }
-
 #btn-3:checked ~ .slides .slide:nth-child(3) {
     display: block;
 }
@@ -218,7 +211,6 @@ h1, h2, p {
 #btn-3:checked ~ .slider-controls label[for="btn-3"] {
     background: #c1c1c1;
 }
-
 .block-services {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -304,7 +296,6 @@ h1, h2, p {
     padding-top: 41px;
     padding-bottom: 70px;
     border-bottom: 2px solid #eeeeee;
-
 }
 .index-content-left {
     float: left;
@@ -339,7 +330,6 @@ h1, h2, p {
 .content-list-left, .content-list-right  {
     padding: 0;
     margin: 0;
-    
 }
 .content-list-left li, 
 .content-list-right li {
@@ -361,7 +351,6 @@ h1, h2, p {
     width: 25px;
     height: 2px;
     background-color: #fb565a;
-
 }
 .index-content-right {
     float: right;
@@ -403,35 +392,28 @@ h1, h2, p {
     background-color: #eeeeee;
 }
 .partners {
-    padding-top: 36px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #eeeeee;
+    border-bottom: 2px solid #eee;
+    margin: 0;
+    padding: 21px 0px 10px;
 }
 .partners-list {
-    margin: 0 -38px;
-
+     font-size: 0;
+    margin: 0 -50px;
+    padding: 0;
 }
 .partners-logo {
     display: inline-block;
-    font-size: 0;
-    vertical-align: top;
-    width: 240px;
-    margin: 19px 23px 0 50px;
-    line-height: 40px;
+    margin: 0px 50px;
+    text-align: center;
+    vertical-align: middle;
+    width: 221px;
 }
-.partners-logo:first-child {
-    padding-top: 12px;
-}
-.partners-logo:last-child {
-    margin-top: 10px;
-    margin-left: 56px;
-}
-.partners-logo-link img {
+.partners-logo a {
     opacity: 0.2;
 }
-.partners-logo-link img:hover, .partners-logo-link img:active {
+.partners-logo a:hover {
     opacity: 1;
-} 
+}
 .map {
     position: relative;
     min-height: 416px;
@@ -489,7 +471,6 @@ h1, h2, p {
 .address-block .phone {
     letter-spacing: -0.1px;
     padding: 4px 19px 13px 20px
-
 }
 .address-block .btn-form-user {
     display: inline-block;
@@ -511,7 +492,6 @@ h1, h2, p {
 }
 .footer-main {
     /*padding-bottom: 74px*/
-    
 }
 .footer-social {
     float: left;
@@ -572,7 +552,7 @@ h1, h2, p {
 }
 /*catalog*/
 .secondary-header {
-    background-color:rgb(238, 238, 238);
+    background-color:#eeeeee;
 }
 .title-header {
     padding: 55px 118px 80px 84px;
@@ -611,7 +591,6 @@ legend {
     line-height: 30px;
     text-transform: uppercase;
 }
-
 /*Фильтр цены*/
 .range-filter {
     width: 240px;
@@ -643,7 +622,7 @@ legend {
     width: 4px;
     height: 4px;
     cursor: pointer;
-    border: 8px solid #fff;
+    border: 8px solid #ffffff;
     border-radius: 50%;
     background: #ababab;
     box-shadow: 0 2px 1px 0 #cfcfcf;
@@ -667,7 +646,6 @@ legend {
     text-align: right;
 }
 .price-controls input {
-    font-family: 'Roboto', 'Arial', sans-serif;
     font-size: 16px;
     width: 60px;
     margin-left: 6px;
@@ -775,7 +753,6 @@ legend {
    .sidebar input[type="checkbox"]:checked:disabled + label:hover::before  {
     background-position: -291px -10px;
  }
-
 .sidebar input[name="show"] {
     display: block;
     padding: 10px 5px 9px 7px;
@@ -924,7 +901,7 @@ legend {
     border: 30px solid #797979;
 }
 .gallery-preview {
-    border: 30px solid rgb(241, 241, 241);
+    border: 30px solid #f1f1f1;
     border-radius: 5px; 
 }
 .gallery-item::before {
@@ -953,7 +930,6 @@ legend {
     left: 0;
     bottom: 0;
     z-index: 8;
-
 }
 .gallery-inner {
     position: absolute;
@@ -963,7 +939,7 @@ legend {
     bottom: 20px;
     left: 20px;
     right: 20px;
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
     cursor: pointer;
 }
 .gallery-inner h2 {
@@ -1009,7 +985,6 @@ legend {
 .gallery-inner-btn:active {
     background-color: #b63538;
     box-shadow: inset 0px 17px 0 -14px #9b2d30;
-
     }
 .gallery-pages {
     margin-left: 20px;
@@ -1052,7 +1027,6 @@ legend {
     color: #2b2b2b;
     box-shadow: inset 0px 17px 0 -14px #b5b5b5;
 }
-
 .gallery-pages-list .active-page, 
 .gallery-pages-list .active-page:hover,
 .gallery-pages-list .active-page:active  {
@@ -1110,7 +1084,6 @@ legend {
     background-color: #fb565a;
     border-radius: 25px;
     border: none;
-
 }
 .modal-content-close::before,
 .modal-content-close::after {
@@ -1206,9 +1179,9 @@ legend {
     border-radius: 3px;
 }
 .modal-content-show {
-  display: block;
-  animation: bounce 0.6s;
+    display: block;
+    animation: bounce 0.6s;
 }
 .modal-error {
-  animation: shake 0.6s;
+    animation: shake 0.6s;
 }
