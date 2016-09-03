@@ -417,7 +417,7 @@ h1, h2, p {
 .map {
     position: relative;
     min-height: 416px;
-    margin-top: 6px;
+    margin: 6px 0 156px -10px; 
     margin-bottom: 156px;
 }   
 .map-image {
