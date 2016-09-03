@@ -96,18 +96,18 @@ h1, h2, p {
 .basket::before {
     content: "";
     position: absolute;
-    top: 4px;
+    top: 5px;
     left: -27px;
     width: 18px;
     height: 18px;
     background-image: url("../img/spr.png");
-    background-position: -10px -9px;
+    background-position: -30px -30px;
 }
 .basket:hover::before {
-    background-position: -45px -9px;
+    background-position: -105px -30px;
 }
 .basket:active::before {
-    background-position: -80px -9px;
+    background-position: -180px -30px;
 }
 /*слайдер главной страницы */
 .slider {
@@ -502,10 +502,9 @@ h1, h2, p {
     display: inline-block;
     vertical-align: top;
     background-color: #e1e1e1;
-    width: 31px;
-    min-height: 31px;
+    width: 61px;
+    min-height: 61px;
     border-radius: 30px;
-    border: 15px solid #e1e1e1;
     margin-right: 23px;
     margin-top: 2px;
     margin-left: 1px;
@@ -514,13 +513,13 @@ h1, h2, p {
     background-repeat: no-repeat;
 }
 .social-btn-vk {
-    background-position: -458px -2px;
+    background-position: -903px -6px;
 }
 .social-btn-fb {
-    background-position: -376px -7px;
+    background-position: -740px -12px;
 }
 .social-btn-inst {
-    background-position: -411px -6px;
+    background-position: -816px -11px;
 }
 .social-btn:hover {
     background-color: #fb565a;
@@ -529,6 +528,8 @@ h1, h2, p {
 .social-btn:active {
     background-color: #d6494d;
     border-color: #d6494d;
+    box-shadow: inset 0px 3px 1px 0px #b63e42,
+                inset 0px 0px 0px 3px #d6494d;
 }
 .social-btn:last-child {
     margin-right: 0;
@@ -549,7 +550,6 @@ h1, h2, p {
     padding-top: 9px;
     font-size: 16px;
     line-height: 22px;
-    letter-spacing: -0.1px;
 }
 /*catalog*/
 .secondary-header {
@@ -733,26 +733,26 @@ legend {
     height: 23px;
     background-image: url("../img/spr.png");
     background-repeat: no-repeat;
-    background-position: -201px -10px;
+    background-position: -421px -30px;
  }
   .sidebar input[type="checkbox"]:checked + label::before {
-    background-position: -244px -10px;
+    background-position: -504px -30px;
  }
   .sidebar input[type="checkbox"]:disabled + label::before {
-    background-position: -115px -10px;
+    background-position: -255px -30px;
  } 
   .sidebar input[type="checkbox"] + label:hover::before {
-     background-position: -158px -10px;
+     background-position: -338px -30px;
  } 
   .sidebar input[type="checkbox"]:checked + label:hover::before {
-     background-position: -338px -10px;
+     background-position: -678px -30px;
  }
    .sidebar input[type="checkbox"]:disabled + label:hover::before {
-    background-position: -115px -10px;
+    background-position: -255px -30px;
  }
    .sidebar input[type="checkbox"]:checked:disabled + label::before,
    .sidebar input[type="checkbox"]:checked:disabled + label:hover::before  {
-    background-position: -291px -10px;
+    background-position: -591px -30px;
  }
 .sidebar input[name="show"] {
     display: block;
@@ -1145,18 +1145,18 @@ legend {
     font-size: 12px;
     line-height: 18px;
 }
-.modal-content input::-webkit-input-placeholder {
+.modal-form .form-field::-webkit-input-placeholder {
     color: #000000;
 }
-.modal-content input::-moz-placeholder {
+.modal-form .form-field::-moz-placeholder {
     color: #000000;
 }
-.modal-content input:-moz-placeholder {
+.modal-form .form-field:-moz-placeholder {
     color: #000000;
 }
-.modal-content input:-ms-input-placeholder {
+.modal-form .form-field:-ms-input-placeholder {
     color: #000000;
-} 
+}
 .modal-content label[for="modal-email"] {
     margin-left: 15px;
 }
@@ -1168,7 +1168,7 @@ legend {
     padding-left: 13px;
     padding-top: 8px;
     display: block;
-    margin: 10px 449px 0px 0px;
+    margin-top: 10px;
     width: 460px;
     height: 114px;
     box-sizing: border-box;
@@ -1192,7 +1192,7 @@ legend {
     width: 460px;
     height: 38px;
     padding: 10px 33px;
-    margin-TOP: 48PX;
+    margin-top: 48px;
     font-size: 12px;
     line-height: 18px;
     vertical-align: top;
