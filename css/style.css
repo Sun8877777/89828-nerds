@@ -300,13 +300,16 @@ h1, h2, p {
 .index-content-left {
     float: left;
     width: 620px;
-    margin-left: -2px;
+    margin-left: -1px;
 }
 .about-heading {
     margin: 0;
     padding-top: 29px;
     font-size: 36px;
     line-height: 36px;
+}
+.index-content-left .about-company {
+    padding-bottom: 28px;
 }
 .about-heading b {
     font-weight: 500;
@@ -317,7 +320,8 @@ h1, h2, p {
     padding-top: 2px;
     font-size: 16px;
     word-spacing: 0.4px;
-    letter-spacing: 0.1px;
+    letter-spacing: 0.07px;
+}
 }
 .index-content-left .content-list {
     padding-top: 28px;
@@ -343,7 +347,7 @@ h1, h2, p {
     padding-left: 38px;
 }
 .content-list-left li::before,
- .content-list-right li::before {
+.content-list-right li::before {
     content: "";
     position: absolute;
     top: 32px;
@@ -355,7 +359,6 @@ h1, h2, p {
 .index-content-right {
     float: right;
     width: 240px;
-    margin-right:1px; 
 }
 .content-right-logo {
     padding-top: 18px;
@@ -367,7 +370,7 @@ h1, h2, p {
     font-size: 16px;
     line-height: 8.56px;
     text-transform: uppercase;
-    padding-left: 49px;
+    padding-left: 48px;
     padding-top: 27px;
     padding-bottom: 73px;
 }
@@ -417,29 +420,26 @@ h1, h2, p {
 .map {
     position: relative;
     min-height: 416px;
-    margin: 6px 0 156px -10px; 
-    margin-bottom: 156px;
+    margin: 85px auto 76px auto;
 }   
 .map-image {
     position: absolute;
-    margin: 79px auto 0 auto;
     width: 100%;
     height: 416px;
     z-index: 1;
-    background-image: url("../img/map.jpg");
+    background: url("../img/map.jpg") top center;
     background-repeat: no-repeat;
-    background-position-x: 287px;
 }
-.map-image::before {
+.address-block::before {
     content: "";
     position: absolute;
     top: 112px;
-    right: 419px;
+    left: 678px;
     width: 231px;
     min-height: 190px;
     background-image: url("../img/logo-nerds-map.png");
     background-repeat: no-repeat;
-    z-index: -1;
+    z-index: 2;
 }
 .address-block {
     width: 100%;
@@ -447,7 +447,7 @@ h1, h2, p {
 }
 .address {
     position: absolute;
-    top: 168px;
+    top: 88px;
     width: 250px;
     height: 240px;
     background-color: #ffffff;
@@ -467,6 +467,7 @@ h1, h2, p {
     margin-top: 12px;
     padding: 0px 19px;
     color: #a3a3a3;
+    letter-spacing: 0.06px;
 }
 .address-block .phone {
     letter-spacing: -0.1px;
@@ -491,7 +492,7 @@ h1, h2, p {
     box-sizing: border-box;
 }
 .footer-main {
-    /*padding-bottom: 74px*/
+    padding-bottom: 74px
 }
 .footer-social {
     float: left;
@@ -1038,7 +1039,7 @@ legend {
 /*Модальная форма*/
 @keyframes bounce {
   0%   {
-    transform: translateY(-2000px);
+    transform: translateY(-200px);
   }
   70%  {
     transform: translateY(30px);
@@ -1066,13 +1067,16 @@ legend {
 }
 .modal-content {
     position: absolute;
-    top: 120px;
+    top: 0;
     left: 50%;
+    margin-left: -325px;
+    margin-top: -35px;
     z-index: 25;
     width: 470px;
-    margin-left: -229px;
-    padding: 25px 80px;
+    min-height: 416px;
+    padding: 0px 80px;
     background-color: #ffffff;
+    box-shadow: 0px 20px 40px 0px rgba(0, 1, 1, 0.75);
 }
 .modal-content-close {
     position: absolute;
@@ -1114,11 +1118,11 @@ legend {
 }
 .modal-content label {
     display: inline-block;
-    vertical-align: top;    
+    vertical-align: top;
     font-size: 16px;
-    line-height: 18px;  
+    line-height: 18px;
+    margin-top: 25px; 
 }
-
 .modal-content legend {
     font-size: 0;
 }
@@ -1133,6 +1137,7 @@ legend {
     padding-left: 13px;
     border-radius: 2px;
     letter-spacing: 0.2px;
+    outline: none;
 }
 .modal-content input[placeholder],
 .modal-content textarea  {
@@ -1140,8 +1145,20 @@ legend {
     font-size: 12px;
     line-height: 18px;
 }
+.modal-content input::-webkit-input-placeholder {
+    color: #000000;
+}
+.modal-content input::-moz-placeholder {
+    color: #000000;
+}
+.modal-content input:-moz-placeholder {
+    color: #000000;
+}
+.modal-content input:-ms-input-placeholder {
+    color: #000000;
+} 
 .modal-content label[for="modal-email"] {
-    margin-left: 16px;
+    margin-left: 15px;
 }
 .modal-content label[for="modal-uset-text"] {
     display: block;
@@ -1158,7 +1175,18 @@ legend {
     border: 2px solid #d7dcde;
     border-radius: 2px;
     resize: none;
+    outline: none;
 }
+.modal-content input[name="modal-user-name"]:hover,
+.modal-content input[name="modal-email"]:hover,
+.modal-content textarea:hover {
+    border-color: #a2a9ac;
+}
+.modal-content input[name="modal-user-name"]:focus,
+.modal-content input[name="modal-email"]:focus,
+.modal-content textarea:focus {
+    border-color: #56bffb;
+}         
 .modal-content button[name="modal-submit"] {
     display: inline-block;
     width: 460px;
