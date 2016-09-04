@@ -398,7 +398,7 @@ h1, h2, p {
 .partners {
     border-bottom: 2px solid #eee;
     margin: 0;
-    padding: 45px 0px 20px;
+    padding: 44px 0px 20px;
 }
 .partners-list {
     font-size: 0;
@@ -407,7 +407,7 @@ h1, h2, p {
 }
 /*.partners-logo {
     display: inline-block;
-    margin: 0px 50px;
+    margin: -2px 50px;
     text-align: center;
     vertical-align: middle;
     width: 221px;
@@ -420,10 +420,10 @@ h1, h2, p {
     vertical-align: middle;
     width: 221px;
 }
-.partners-logo:first-child {
-    margin-top: -9px;
+.partners-logo:nth-child(3n-2) {
+    margin-top: -6px;
 }
-.partners-logo:last-child {
+.partners-logo:nth-child(3n) {
     padding-left: 8px;
 }
 /*конец теста стилей партенров*/
