@@ -188,11 +188,11 @@ h1, h2, p {
 }
 .slide:nth-child(2) {
     background-image: url("../img/header-image-2.png");
-    background-position: 98% 15px;
+    background-position: 639px 15px;
 }
 .slide:nth-child(3) {
     background-image: url("../img/header-image-3.png");
-    background-position: 99% -9px;
+    background-position: 541px -9px;
 }
 .slide {
     display: none;
@@ -241,6 +241,7 @@ h1, h2, p {
 }
 .services-desc p {
     margin-top: 14px;
+    width: 240px;
 }
 .services-item:nth-child(1) p {
     letter-spacing: 0.1px;
@@ -400,17 +401,32 @@ h1, h2, p {
     padding: 45px 0px 20px;
 }
 .partners-list {
-     font-size: 0;
+    font-size: 0;
     margin: 0 -50px;
     padding: 0;
 }
-.partners-logo {
+/*.partners-logo {
     display: inline-block;
     margin: 0px 50px;
     text-align: center;
     vertical-align: middle;
     width: 221px;
+}*/
+/*тест стилей партнеров*/
+.partners-logo {
+    display: inline-block;
+    margin: 0px 49px;
+    text-align: center;
+    vertical-align: middle;
+    width: 221px;
 }
+.partners-logo:first-child {
+    margin-top: -9px;
+}
+.partners-logo:last-child {
+    padding-left: 8px;
+}
+/*конец теста стилей партенров*/
 .partners-logo a {
     opacity: 0.2;
 }
@@ -471,7 +487,9 @@ h1, h2, p {
 }
 .address-block .phone {
     letter-spacing: -0.1px;
-    padding: 4px 19px 13px 20px
+    padding: 4px 19px 13px 20px;
+    color: #a3a3a3;
+    text-decoration: none;
 }
 .address-block .btn-form-user {
     display: inline-block;

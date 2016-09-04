@@ -4,8 +4,8 @@
         var form = popup.querySelector("form");
         var login = popup.querySelector("[name=modal-user-name]");
         var email = popup.querySelector("[name=modal-email]")
-        var storage = localStorage.getItem("login");
-       
+        /*var storage = localStorage.getItem("login");*/
+        
         link.addEventListener("click", function(event) {
           event.preventDefault();
           popup.classList.add("modal-content-show");
