@@ -25,7 +25,7 @@ h1, h2, p {
     float: left;
     width: 140px;
     padding-top: 27px;
-    margin-right: 180px;
+    margin-right: 181px;
 }
 .main-navigation {
     float: left;
@@ -36,7 +36,6 @@ h1, h2, p {
 .main-navigation-list {
     margin: 0;
     padding: 0;
-    padding-left: 2px;
     list-style: none;
     font-size: 0;
 }
@@ -191,7 +190,7 @@ h1, h2, p {
 }
 .slide:nth-child(3) {
     background-image: url("../img/header-image-3.png");
-    background-position: 541px -9px;
+    background-position: 540px -9px;
 }
 .slide {
     display: none;
@@ -411,7 +410,6 @@ h1, h2, p {
     vertical-align: middle;
     width: 221px;
 }*/
-/*тест стилей партнеров*/
 .partners-logo {
     display: inline-block;
     margin: 0px 49px;
@@ -425,7 +423,6 @@ h1, h2, p {
 .partners-logo:nth-child(3n) {
     padding-left: 8px;
 }
-/*конец теста стилей партенров*/
 .partners-logo a {
     opacity: 0.2;
 }
@@ -441,20 +438,27 @@ h1, h2, p {
     position: absolute;
     width: 100%;
     height: 416px;
-    z-index: 0;
+    z-index: 1;
     background: url("../img/map.jpg") top center;
     background-repeat: no-repeat;
 }
-.address-block::before {
+.map-int {
+    position: absolute;
+    width: 100%;
+    height: 416px;
+    z-index: 10;
+}
+.map-image::before {
     content: "";
     position: absolute;
     top: 112px;
-    left: 678px;
+    left: 50%;
+    margin-left: 238px;
     width: 231px;
     min-height: 190px;
     background-image: url("../img/logo-nerds-map.png");
     background-repeat: no-repeat;
-    z-index: 0;
+    z-index: 1;
 }
 .address-block {
     width: 100%;
@@ -462,7 +466,7 @@ h1, h2, p {
 }
 .address {
     position: absolute;
-    top: 88px;
+    top: 89px;
     width: 250px;
     height: 240px;
     background-color: #ffffff;
@@ -485,7 +489,7 @@ h1, h2, p {
     letter-spacing: 0.06px;
 }
 .address-block .phone {
-    letter-spacing: -0.1px;
+    letter-spacing: -0.07px;
     padding: 4px 19px 13px 20px;
     color: #a3a3a3;
     text-decoration: none;
@@ -564,9 +568,11 @@ h1, h2, p {
 }
 .social-promo p {
     margin: 0;
-    padding-top: 9px;
+    padding-top: 10px;
     font-size: 16px;
     line-height: 22px;
+    letter-spacing: -0.02px;
+
 }
 /*catalog*/
 .secondary-header {
@@ -588,7 +594,7 @@ h1, h2, p {
 }
 .main-catalog {
     padding-top: 74px;
-    margin-bottom: -5px;
+    margin-bottom: -6px;
 }
 .sidebar {
     float: left;
@@ -599,7 +605,7 @@ fieldset {
     border: none;
     padding: 0;
     margin-left: -1px;
-    margin-bottom: 31px;
+    margin-bottom: 30px;
 }
 fieldset:nth-child(2) {
     margin-bottom: 41px;
@@ -620,7 +626,7 @@ legend {
     padding-top: 39px;
     padding-right: 20px;
     padding-left: 20px;
-    margin-bottom: 13px;
+    margin-bottom: 14px;
     border-radius: 5px;
     background: #f1f1f1;
 }
