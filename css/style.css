@@ -463,6 +463,7 @@ h1, h2, p {
 .address-block {
     width: 100%;
     position: relative;
+    z-index: 10;
 }
 .address {
     position: absolute;
