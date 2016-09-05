@@ -110,7 +110,7 @@ h1, h2, p {
 /*слайдер главной страницы */
 .slider {
     position: relative;
-    background-color:#eeeeee;
+    background-color: #eeeeee;
     padding-top: 33px;
     overflow: hidden;
     min-height: 310px;
@@ -434,10 +434,12 @@ h1, h2, p {
 }   
 .map-image {
     position: absolute;
-    width: 100%;
+    width: 1200px;
     height: 416px;
+    left: 50%;
+    margin-left: -600px;
     z-index: 1;
-    background: url("../img/map.jpg") top center;
+    background: #f1efe8 url("../img/map.jpg") top center;
     background-repeat: no-repeat;
 }
 .map-int {
@@ -567,7 +569,6 @@ h1, h2, p {
     font-size: 16px;
     line-height: 22px;
     letter-spacing: -0.02px;
-
 }
 /*catalog*/
 .secondary-header {
@@ -647,13 +648,13 @@ legend {
     box-shadow: 0 2px 1px 0 #cfcfcf;
 }
 .range-controls .toggle-min {
-     left: 20px;
+    left: 20px;
 }
 .range-controls .toggle-max {
-     left: 160px;
+    left: 160px;
 }
 .price-controls {
-     font-size: 0;
+    font-size: 0;
 }
 .price-controls label {
     font-size: 16px;
@@ -760,10 +761,10 @@ legend {
     background-position: -255px -30px;
  } 
   .sidebar input[type="checkbox"] + label:hover::before {
-     background-position: -338px -30px;
+    background-position: -338px -30px;
  } 
   .sidebar input[type="checkbox"]:checked + label:hover::before {
-     background-position: -678px -30px;
+    background-position: -678px -30px;
  }
    .sidebar input[type="checkbox"]:disabled + label:hover::before {
     background-position: -255px -30px;
@@ -801,7 +802,7 @@ legend {
     padding-bottom: 15px;
 }
 .gallery-filter-title {
-     margin-right: 40px;
+    margin-right: 40px;
 }
 .gallery-filter ul {
     padding: 0;
@@ -838,14 +839,14 @@ legend {
 .gallery-filter-price:hover,
 .gallery-filter-type:hover,
 .gallery-filter-function:hover {
-     border-bottom: 1px solid #00ca74;
-     color: #000000;
+    border-bottom: 1px solid #00ca74;
+    color: #000000;
 }
 .gallery-filter-price:active,
 .gallery-filter-type:active,
 .gallery-filter-function:active {
-     color: #000000;
-     border: none;
+    color: #000000;
+    border: none;
 }
 .gallery-filter-function {
     padding-left: 2px;
@@ -912,7 +913,7 @@ legend {
     margin-right: 0;
 }
 .gallery-item .gallery-inner {
-    display: block;    
+    display: none;    
 }
 .gallery-item:hover .gallery-inner {
     display: block;
@@ -968,29 +969,28 @@ legend {
     text-align: center;
     width: 160px;
     text-transform: uppercase;
-    padding: 16px 20px 0;
-    margin-bottom: 0;
+    margin: 33px 20px -3px 20px;
     letter-spacing: 0.2px;
     overflow: hidden;
-}
-.gallery-item:nth-child(4) p {
-    margin-top: 5px;
-    margin-bottom: -1px;
 }
 .gallery-inner p {
     padding: 0 18px 0 20px;
     font-size: 14px;
     line-height: 18px;
-    height: 35px;
+    height: 36px;
     text-align: center;
     overflow: hidden;
 }
+.inner-title-link {
+    color: #000000;
+    text-decoration: none;
+}
 .gallery-inner-btn {
-    display: inline-block;
-    vertical-align: top;
-    margin: 14px 30px;
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    right: 30px; 
     padding-left: 10px;
-    text-align: center;
     font-size: 18px;
     line-height: 8.56px;
     width: 140px;
@@ -1008,7 +1008,7 @@ legend {
 .gallery-inner-btn:active {
     background-color: #b63538;
     box-shadow: inset 0px 17px 0 -14px #9b2d30;
-    }
+}
 .gallery-pages {
     margin-left: 19px;
 }
@@ -1159,7 +1159,6 @@ legend {
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
 }
-
 .modal-content-close::after {
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
