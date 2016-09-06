@@ -427,6 +427,9 @@ h1, h2, p {
 .partners-logo a:hover {
     opacity: 1;
 }
+.partners-logo a:active {
+    opacity: 1;
+}
 .map {
     position: relative;
     min-height: 416px;
